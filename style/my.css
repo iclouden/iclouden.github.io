@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.app .w-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .app .w-content {
+    width: 100%;
+  }
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: #fff;
+  font: 12px/18px Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  text-shadow: 0 1px 0 #222;
+}
+
+.app .header {
+  /*background: url(../public/static/images/banner.jpg) no-repeat right;*/
+  background: url(https://demosc.chinaz.net/Files/DownLoad/moban/202006/moban4673/assets/images/1.jpg) no-repeat right;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-rows: 120px 1fr;
+}
+
+.app .header:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.57);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.app .header .top{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.app .header a.navbar-brand {
+  width:50%;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.app .menu{
+  display: none;
+  width:4.948vw;
+  height:4.948vw;
+  background: url(./images/menu.png) no-repeat;
+  background-size: 100% 100%;
+  margin-top: 2.666vw;
+  margin-right: 2.666vw;
+  transition: 0.3s ease-out;
+}
+.app .header .menu-links{
+  margin-top: 20px;
+  padding-right: 20px;
+  transition: 0.3s ease-out;
+  transition-property: all;
+  max-height: 50vw;
+}
+.app .header .menu-links a.navlink {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 18px;
+  transition: 0.3s ease-out;
+}
+@media screen and (max-width: 768px) {
+  .app .header a.navbar-brand {
+    margin-top: 3.666vw;
+    margin-left: 2.666vw;
+    font-size: 5vw;
+  }
+  .app .menu{
+    display: inline-block;
+  }
+  .app .header .menu-links{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1vw;
+    overflow: hidden;
+  }
+  .app .header .menu-links a.navlink {
+    width:20%;
+    margin-top: 3vw;
+    text-align: right;
+  }
+}
+
+
+.app .banner .banner-info .banner-text {
+  font-weight: 400;
+  font-size: 56px !important;
+  line-height: 65px;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+}
+
+.app .banner .banner-tag {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.app .banner .banner-avator {
+  width: 128px;
+  height: 128px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+
+
+
+.app main section {
+  margin-top: 30px;
+}
+
+.app main {
+  background: #fff;
+}
+
+.app main .section-title {
+  position: relative;
+  padding: 12px 0 16px 10px;
+  margin-bottom: 10px;
+}
+
+.app main .section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-bg-1 {
+  background:#000 url(../public/static/images/item-bg-1.jpg) no-repeat !important;
+  background-size: 100% 100% !important;
+}
+
+.item-bg-2 {
+  background:#000 url(../public/static/images/item-bg-2.jpg) no-repeat !important;
+  background-size: 100% 100% !important;
+}
+
+.item-bg-3 {
+  background:#000 url(../public/static/images/item-bg-3.png) no-repeat !important;
+  background-size: 100% 100% !important;
+}
+
+.item-bg-4 {
+  background:#000 url(../public/static/images/item-bg-4.jpg) no-repeat !important;
+  background-size: 100% 100% !important;
+}
+.app main .section-item {
+  position: relative;
+  width: 23%;
+  height: 180px;
+  flex-grow: 0;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s ease-out;
+  background:#777;
+}
+
+@media screen and (max-width: 1200px) {
+  .app main .section-item {
+    width: 23%;
+    height: 15vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app main .section-item {
+    width: 49%;
+    height: 30vw;
+    margin-top:2vw;
+  }
+}
+
+
+
+.app main .section-item>img {
+  object-fit: cover;
+  max-width: 40%;
+  max-height: 40%;
+  margin-top: 20%;
+}
+
+.app main .section-item .mask {
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index: 0;
+  background: #000;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.app main .section-item>span {
+  z-index: 10;
+  font-weight: 600;
+  font-size: 24px;
+  position: absolute;
+  bottom: 1px;
+  right: 5px;
+  line-height: 30px;
+}
+.app main .section-item .section-item-info {
+  position: absolute;
+  z-index: 10;
+  right:5px;
+  bottom:1px;
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.app main .section-item:hover {
+  color: #fff;
+}
+.app main .section-item:hover .mask {
+  opacity: 0.7;
+}
+.app main .section-item:hover .section-item-info {
+  opacity: 1;
+  transition: 0.3s ease-out;
+}
+
+
+.app footer {
+  margin-top: 120px;
+  background: #222 url(https://demosc.chinaz.net/Files/DownLoad/moban/201308/chahua3002/style/images/texture.png) repeat;
+}
+
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  min-height: 60px;
+  padding-top: 30px;
+}
+
+.footer-links>a {
+  margin-left: 50px;
+}
+
+.footer-links>a>img {
+  height: 30px;
+}
+
+.footer-copyright {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #454545;
+}
+
+.footer-copyright-text {
+  color: #aaa;
+  font-size: 20px;
+  line-height: 23px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .app footer {
+    margin-top: 10vw;
+  }
+  .footer-links {
+    min-height: 5vw;
+    padding-top: 3vw;
+  }
+  .footer-links>a {
+    margin: auto;
+  }
+  .footer-links>a>img {
+    height: 7vw;
+  }
+  .footer-copyright {
+    margin-top: 5vw;
+    padding-top: 5vw;
+  }
+  .footer-copyright-text {
+    font-size: 3vw;
+    line-height: 3vw;
+    padding-bottom: 3vw;
+    text-align: center;
+  }
+}
